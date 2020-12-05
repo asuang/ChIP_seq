@@ -1,8 +1,12 @@
-**<font color="grey"><font size=10>UPSTREAM ANALYSIS of ChIP-Seq </font></font>**
+**<font color="grey"><font size=200>UPSTREAM ANALYSIS of ChIP-Seq </font></font>**
 <font size=5><font color="grey"><p align="right">2020.10.27</p></font></font>
 # <font color="steelblue">Pipe for ChIP</font>
 
-[TOC]
+- [<font size=4>1   mapping reads (RNA-seq mappers)</font>](#-font-size-4-1---mapping-reads--rna-seq-mappers---font-)
+- [<font size=4>2   sorting alignment and converting <kbd>samtools</kbd></font>](#-font-size-4-2---sorting-alignment-and-converting--kbd-samtools--kbd---font-)
+- [<font size=4> 3 removing the PCR duplication</font>](#-font-size-4--3-removing-the-pcr-duplication--font-)
+- [<font size=4> 4 peak calling <kbd>macs2</kbd> </font>](#-font-size-4--4-peak-calling--kbd-macs2--kbd----font-)
+ - [[ChIP.sh](https://github.com/asuang/ChIP_seq/blob/main/ChIP_seq.sh)]
 
 ##   <font size=4>1   mapping reads (RNA-seq mappers)</font> ##
 Using the RNA-seq mappers , such as <kbd>hisat2</kbd> , <kbd>bowtie</kbd> , <kbd>bowtie2</kbd> or another , mapping the reads against the genome reference and identifying their genomic positions.
