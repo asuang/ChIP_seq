@@ -42,7 +42,7 @@ bowtie2 -S ${input}.sam -p 16 -5 5 -3 10 -x /media/hp/disk1/song/Genomes/NC10/Se
 samtools view -@ 16 -Sb ${input}.sam > ${input}.bam
 samtools sort -@ 16 ${input}.bam -o ${input}.sort.bam
 
-java -jar ~/picard/picard.jar MarkDuplicates I=${input}.sort.bam O=${input}.sort.markdup.bam M=${input}.markdup.txt
+java -jar /media/hp/disk4/shuang/picard/picard.jar MarkDuplicates I=${input}.sort.bam O=${input}.sort.markdup.bam M=${input}.markdup.txt
 samtools index ${input}.sort.markdup.bam
 #samtools view -bq 1 $input\_sorted.bam > $input.unique.bam  #GET THE UNIQUE READS
 # make bw files 
